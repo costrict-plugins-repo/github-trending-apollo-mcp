@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.adelaidasofia/apollo-mcp",
+  "title": "FastMCP server for Apollo",
+  "description": "FastMCP server for Apollo.io \u2014 22 tools: sequences, campaign health, mailbox warmup, enrichment,\u2026",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/adelaidasofia/apollo-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/adelaidasofia/apollo-mcp/releases/download/v0.1.0/apollo-mcp.mcpb",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "fileSha256": "60d54c9f8a3bd7a4044885de41f2a6f7ed305a1130d1d30e299c40ea1ff6bd05",
+      "environmentVariables": [
+        {
+          "name": "APOLLO_API_KEY",
+          "description": "From app.apollo.io \u2192 Settings \u2192 API",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
